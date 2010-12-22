@@ -3,7 +3,7 @@ module Rack
     DEFAULT_RESPONSE = [
       422,
       { "Content-Type" => "text/html" },
-      "<body><h2>We are undergoing maintenance right now, please try again later.</h2></body></html>"
+      "<html><body><h2>We are undergoing maintenance right now, please try again later.</h2></body></html>"
     ]
 
     def initialize(app, maintenance_response=DEFAULT_RESPONSE)
